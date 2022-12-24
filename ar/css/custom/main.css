@@ -11,6 +11,7 @@ Author Profile  :  https://themeforest.net/user/mironcoder
             COMMON STYLE START
 =========================================*/
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap");
+
 :root {
   --red: #ff3838;
   --gray: #777777;
@@ -90,7 +91,12 @@ body {
   text-align: right;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--heading);
 }
 
@@ -485,6 +491,7 @@ textarea.form-control {
   .nav-tabs li .nav-link {
     padding: 10px 0px;
   }
+
   .tab-pane {
     padding: 0px 15px;
   }
@@ -543,15 +550,19 @@ textarea.form-control {
   .section {
     padding: 60px 0px 0px;
   }
+
   .inner-section {
     margin-bottom: 60px;
   }
+
   .section-side-heading {
     margin-bottom: 60px;
   }
+
   .section-center-heading {
     margin-bottom: 30px;
   }
+
   .section-center-heading p {
     width: 100%;
     font-size: 16px;
@@ -570,6 +581,7 @@ textarea.form-control {
   .section {
     padding: 80px 0px 0px;
   }
+
   .inner-section {
     margin-bottom: 80px;
   }
@@ -642,6 +654,8 @@ textarea.form-control {
 .table-product img {
   width: 100px;
   border-radius: 6px;
+  height: 60px;
+  object-fit: cover;
 }
 
 .table-category h6 a {
@@ -709,6 +723,7 @@ textarea.form-control {
   .table-scroll {
     overflow-x: scroll;
   }
+
   .table-list {
     width: 900px;
   }
@@ -859,11 +874,11 @@ textarea.form-control {
   text-shadow: var(--primary-tshadow);
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumb-item+.breadcrumb-item {
   padding: 0px;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   color: var(--primary-light);
   text-shadow: var(--primary-tshadow);
   padding: 0px 5px;
@@ -973,7 +988,8 @@ textarea.form-control {
   margin: 0px 3px;
 }
 
-.page-item:first-child .page-link, .page-item:last-child .page-link {
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
   border-radius: 50%;
 }
 
@@ -1094,7 +1110,7 @@ textarea.form-control {
   display: none;
 }
 
-.star-rating input:checked ~ label::after {
+.star-rating input:checked~label::after {
   opacity: 1;
 }
 
@@ -1109,7 +1125,7 @@ textarea.form-control {
   opacity: 1;
 }
 
-.star-rating label:hover:hover ~ label::after {
+.star-rating label:hover:hover~label::after {
   opacity: 1;
 }
 
@@ -1482,14 +1498,17 @@ textarea.form-control {
 }
 
 @media (max-width: 575px) {
+
   .product-card.standard,
   .ad-standard .product-card.standard {
     flex-direction: column;
   }
+
   .product-card.standard .product-media,
   .ad-standard .product-card.standard .product-media {
     margin: 0px;
   }
+
   .product-card.standard .product-img img,
   .ad-standard .product-card.standard .product-img img {
     width: 100%;
@@ -1498,6 +1517,7 @@ textarea.form-control {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+
   .product-card.standard .product-img img,
   .ad-standard .product-card.standard .product-img img {
     width: 225px;
@@ -1678,22 +1698,27 @@ textarea.form-control {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
+
   .feature-img img {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
+
   .feature-wish {
     top: 15px;
     right: 15px;
   }
+
   .feature-title {
     font-size: 18px;
     line-height: 26px;
   }
+
   .feature-meta {
     display: flex;
     flex-direction: column;
   }
+
   .feature-price {
     margin: 0px 0px 5px;
   }
@@ -2861,17 +2886,21 @@ textarea.form-control {
   .review-item {
     padding: 20px 20px;
   }
+
   .review-author {
     padding-top: 15px;
     margin: 15px 0px 0px 30px;
   }
+
   .review-profile {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .review-avatar {
     margin: 0px 0px 15px;
   }
+
   .review-desc {
     font-size: 15px;
   }
@@ -3149,27 +3178,34 @@ textarea.form-control {
   .header-part .container {
     padding: 15px;
   }
+
   .header-content {
     width: 100%;
     flex-direction: column;
     justify-content: center;
   }
+
   .header-logo {
     margin: 0px;
   }
+
   .header-user {
     display: none;
   }
+
   .search-btn {
     display: block;
   }
+
   .header-left {
     width: 100%;
     justify-content: space-between;
   }
+
   .header-right {
     display: none;
   }
+
   .header-form {
     margin-top: 15px;
     display: none;
@@ -3353,6 +3389,7 @@ textarea.form-control {
     visibility: visible;
     opacity: 1;
   }
+
   .sidebar-part.active .sidebar-body {
     left: 0px;
     width: 100%;
@@ -3535,13 +3572,16 @@ textarea.form-control {
 }
 
 @media (max-width: 575px) {
+
   .filter-label,
   .filter-action {
     display: none;
   }
+
   .filter-show {
     width: 80px;
   }
+
   .filter-short {
     width: 130px;
   }
@@ -3787,6 +3827,7 @@ textarea.form-control {
     margin-bottom: 30px;
     flex-direction: column;
   }
+
   .page-info {
     margin-bottom: 15px;
   }
@@ -4028,9 +4069,11 @@ textarea.form-control {
     align-items: flex-start;
     flex-direction: column;
   }
+
   .suggest-date {
     margin-bottom: 12px;
   }
+
   .blog-icon li {
     margin: 6px;
   }
@@ -4041,9 +4084,11 @@ textarea.form-control {
     align-items: flex-start;
     flex-direction: column;
   }
+
   .suggest-date {
     margin-bottom: 12px;
   }
+
   .blog-icon li {
     margin: 6px;
   }
@@ -4086,9 +4131,11 @@ textarea.form-control {
   .newsletter {
     margin-bottom: 60px;
   }
+
   .news-content {
     margin: 0px 0px 30px;
   }
+
   .news-form {
     margin: 0px;
   }
@@ -4098,12 +4145,15 @@ textarea.form-control {
   .news-form input {
     padding: 0px 20px 0px 75px;
   }
+
   .news-form .btn {
     padding: 10px 20px;
   }
+
   .news-form .btn i {
     margin-left: 0px;
   }
+
   .news-form .btn span {
     display: none;
   }
@@ -4300,11 +4350,13 @@ textarea.form-control {
   .footer-content {
     margin-bottom: 30px;
   }
+
   .footer-end-content {
     padding: 25px 0px;
     flex-direction: column;
     text-align: center;
   }
+
   .footer-end-content p {
     margin-bottom: 10px;
   }
@@ -4314,13 +4366,16 @@ textarea.form-control {
   .footer-part {
     padding: 60px 0px 60px;
   }
+
   .footer-content,
   .footer-info {
     margin-right: 30px;
   }
+
   .footer-card-content {
     flex-direction: column;
   }
+
   .footer-payment,
   .footer-option {
     margin-bottom: 30px;
@@ -4331,9 +4386,11 @@ textarea.form-control {
   .footer-part {
     padding: 80px 0px 60px;
   }
+
   .footer-card-content {
     margin-top: 20px;
   }
+
   .footer-payment a,
   .footer-payment button,
   .footer-option a,
@@ -4348,14 +4405,17 @@ textarea.form-control {
   .footer-part {
     padding: 90px 0px 60px;
   }
+
   .footer-card-content {
     margin-top: 20px;
   }
+
   .footer-payment,
   .footer-option,
   .footer-app {
     text-align: center;
   }
+
   .footer-payment a,
   .footer-payment button,
   .footer-option a,
@@ -4625,6 +4685,7 @@ textarea.form-control {
   .dash-menu-list {
     overflow-x: scroll;
   }
+
   .dash-menu-list ul {
     width: 900px;
   }
@@ -4634,33 +4695,42 @@ textarea.form-control {
   .single-banner {
     padding: 60px 0px 160px;
   }
+
   .dash-header-card {
     padding: 20px 20px 0px 20px;
   }
+
   .dash-header-left {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .dash-avatar {
     margin-left: 0px;
     margin-bottom: 5px;
   }
+
   .dash-intro h5 {
     margin-bottom: 12px;
   }
+
   .dash-meta {
     margin-bottom: 25px;
   }
+
   .dash-header-right {
     flex-direction: column;
   }
+
   .dash-focus {
     margin-bottom: 20px;
     margin-left: 0px;
   }
+
   .dash-focus:last-child {
     margin-bottom: 0px;
   }
+
   .dash-header-alert button {
     margin-right: 0px;
   }
@@ -4670,6 +4740,7 @@ textarea.form-control {
   .dash-header-right {
     margin-top: 30px;
   }
+
   .dash-focus h2 {
     font-size: 32px;
   }
@@ -4679,6 +4750,7 @@ textarea.form-control {
   .single-banner {
     padding: 80px 0px 180px;
   }
+
   .dash-header-right {
     margin-top: 30px;
   }
@@ -4688,6 +4760,7 @@ textarea.form-control {
   .dash-avatar {
     margin-left: 25px;
   }
+
   .dash-avatar a img {
     width: 120px;
   }
