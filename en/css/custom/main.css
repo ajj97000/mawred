@@ -4752,6 +4752,12 @@ textarea.form-control {
   }
 }
 
+.category-head .category-img {
+  height: 86px;
+  object-fit: cover;
+  filter: contrast(0.5);
+}
+
 /*========================================
             LAYOUT STYLE END
 =========================================*/
