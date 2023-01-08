@@ -4772,6 +4772,10 @@ textarea.form-control {
   filter: contrast(0.5);
 }
 
+.footer-item {
+  margin-bottom: 5px;
+}
+
 /*========================================
             LAYOUT STYLE END
 =========================================*/
